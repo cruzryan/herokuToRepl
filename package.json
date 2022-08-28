@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pkg --public --d --compress GZip ./dist",
-    "singlefile": "ncc build . -o dist "
+    "dev": "node ./index.js",
+    "build": "npx caxa -i . --output './dist/herokutorepl' -- '{{caxa}}/node_modules/.bin/node' '{{caxa}}/index.js'"
   },
   "bin": {
     "herokutorepl": "./index.js"
@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "@replit/crosis": "^9.1.0",
+    "caxa": "^2.1.0",
     "chalk": "^5.0.1",
     "conf": "^10.2.0",
     "crosis4furrets": "^1.1.0",
