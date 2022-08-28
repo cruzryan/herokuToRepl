@@ -2,7 +2,7 @@
   "name": "herokutorepl",
   "version": "1.0.0",
   "description": "Converts heroku apps to replit apps!",
-  "main": "index.js",
+  "main": "run.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
