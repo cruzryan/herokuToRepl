@@ -18,10 +18,15 @@ export const graphql = async (query, variables = {}) => {
 				variables,
 			},
 	}).then(val => {
-
-		console.log("login: ", config.get("login"))
-		console.log("val: ", val)
-        return val.toJSON();
+		try {
+			return val.toJSON();
+		}catch(err){
+			try {
+				return val.json();
+			}catch(err){
+				return val;
+			}
+		}
     });
 	return data;
 }
