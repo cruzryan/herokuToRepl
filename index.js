@@ -169,10 +169,9 @@ function askForProjectInfo(){
       })
 }
 
-function main(){
+export function main(){
     console.log(chalk.green("Heroku to Repl! #teamReplit"))
     loginHeroku()
     askReplitID()
 
 }
-main();
