@@ -18,6 +18,9 @@ export const graphql = async (query, variables = {}) => {
 				variables,
 			},
 	}).then(val => {
+
+		console.log("login: ", config.get("login"))
+		console.log("val: ", val)
         return val.toJSON();
     });
 	return data;
