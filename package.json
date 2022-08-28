@@ -1,6 +1,6 @@
 {
   "name": "herokutorepl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Converts heroku apps to replit apps!",
   "main": "index.js",
   "type": "module",
